@@ -4,11 +4,21 @@
 <meta charset="UTF-8">
 
 <title>Jose Silva WebDesigner</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, 
 
-<meta name="description" content="Responsive Web Designer">
-<meta name="keywords" content="Responsive Web Designer, responsive web designer, dise&ntildeador web, web developer, HTML CSS ">
-<meta name="author" content="Jose Silva responsive web designer jlsilvag@gmail.com">
+initial-scale=1.0">
+
+<meta name="description" content="Responsive Web 
+
+Designer">
+<meta name="keywords" content="Responsive Web 
+
+Designer, responsive web designer, dise&ntildeador 
+
+web, web developer, HTML CSS ">
+<meta name="author" content="Jose Silva responsive 
+
+web designer jlsilvag@gmail.com">
 
 <style>
 * {
@@ -28,12 +38,12 @@ body {
   background: rgba(0,0,0,1);
   color: white;
   text-shadow:4px 4px 8px rgba(200,200,200,1);
-  
+  height:400px;
   
 }
 /* Style Image Header */
 .imgHeader {
-  width: 15%;
+  width: 25%;
   float:left;
   display:block;
   border-radius:50%;
@@ -66,7 +76,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
+/* Create two unequal columns that sits next to each 
+
+other */
 /* Sidebar/left column */
 .side {
   flex: 30%;
@@ -97,7 +109,44 @@ body {
   background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/*Dropdown*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+   color:white;
+   
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 330px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color:darkblue;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 
+
+700px wide, make the two columns stack on top of 
+
+each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row, .navbar, {   
     flex-direction: column;
@@ -111,8 +160,10 @@ body {
 
 <!-- Header -->
 <header class="header">
-  <img class="imgHeader" src= "miFotoBN.jpg" alt="Foto Jos&eacute Silva en Blanco y Negro">
-  <br><h1>Jos&eacute Silva</h1>
+  <img class="imgHeader" src= "miFotoBN.jpg" 
+
+alt="Foto Jos&eacute Silva en Blanco y Negro">
+  <h1>Jos&eacute Silva</h1>
   <h2><br>Responsive Web Designer</h2><br>
   
 </header>
@@ -120,52 +171,138 @@ body {
 <!-- Navigation Bar -->
 <nav class="navbar">
   <a href="#contacto">Contacto</a>
-  
+  <section class="dropdown">
+  <p>Certificado</p>
+  <figure class="dropdown-content">
+  <img src="certificado.jpg" alt="Certificado 
+
+FreeCodeCamp" width="100%" height="auto">
+  <figcaption class="desc">Certificado Responsive 
+
+Web Designer</figcaption>
+  </figure>
+</section>
 </nav>
 
 <!-- The flexible grid (content) -->
 <section class="row">
   <aside class="side">
-    <h2>Tres modelos de p&aacuteginas que puedes revisar</h2><br>
+    <h2>Tres modelos de p&aacuteginas que puedes 
+
+revisar</h2><br>
     
     <figure>
-    <a href=" https://jlsilvag.github.io/hylse/" target=_blank">
-    <img class="fakeimg" src="hylse.JPG" alt="p&aacutegina de Hylse Silva" ></a><figcaption>Una <b>Landing Page</b> muestra lo que ofreces, sean productos o servicios e indican la forma de comunicarse contigo.</figcaption></a>
+    <a href=" https://jlsilvag.github.io/hylse/" 
+
+target=_blank">
+    <img class="fakeimg" src="hylse.jpg" 
+
+alt="p&aacutegina de Hylse Silva" 
+
+></a><figcaption>Una <b>Landing Page</b> muestra lo 
+
+que ofreces, sean productos o servicios e indican la 
+
+forma de comunicarse contigo.</figcaption></a>
      </figure><br>
     
     <figure>
-    <a href="  https://jlsilvag.github.io/Technical-documentation-page/" target=_blank">
-    <img class="fakeimg" src="technical.JPG" alt="Technical Documentation Page" ></a><figcaption>Una <b>Technical Documentation Page</b> ofrece una visi&oacuten amplia de un producto donde se describe ampliamente sus cualidades y uso. Ampliando con una breve historia.
+    <a href="  
+
+https://jlsilvag.github.io/Technical-documentation-
+
+page/" target=_blank">
+    <img class="fakeimg" src="technical.jpg" 
+
+alt="Technical Documentation Page" 
+
+></a><figcaption>Una <b>Technical Documentation 
+
+Page</b> ofrece una visi&oacuten amplia de un 
+
+producto donde se describe ampliamente sus 
+
+cualidades y uso. Ampliando con una breve historia.
     </figure><br>
 
     <figure>
-    <a href="https://jlsilvag.github.io/survey/" target=_blank">
-    <img class="fakeimg" src="survey.JPG" alt="Survey Form" ></a><figcaption>Una <b>Survey Form</b> es una de las maneras de consultar la opini&oacuten de tus clientes o posibles cliente</figcaption></a>
+    <a href="https://jlsilvag.github.io/survey/" 
+
+target=_blank">
+    <img class="fakeimg" src="survey.jpg" 
+
+alt="Survey Form" ></a><figcaption>Una <b>Survey 
+
+Form</b> es una de las maneras de consultar la 
+
+opini&oacuten de tus clientes o posibles 
+
+cliente</figcaption></a>
      </figure>
   </aside>
 
   <main class="main">
     <h2>Responsive web</h2>
     <h5>Web que se adapta a tu pantalla</h5>
-    <img class="fakeimg" src="laptopSmatphone.jpg" alt="A Laptop and a SmartPhone">
+    <img class="fakeimg" src="laptopSmatphone.jpg" 
+
+alt="A Laptop and a SmartPhone">
     <p><b>Web flexible</b></p>
-    <p>Ver una Web es algo cotidiano en estos d&iacuteas y eso hace importante el dise&ntildeo de la Web. Si no se adapta a pantallas peque&ntildeas se hace dif&iacutecil leerlas. Una <b>Responsive Web</b> es visible desde cualquier dispositivo y tu Web tiene un escenario m&aacutes amplio</p>
+    <p>Ver una Web es algo cotidiano en estos 
+
+d&iacuteas y eso hace importante el dise&ntildeo de 
+
+la Web. Si no se adapta a pantallas peque&ntildeas 
+
+se hace dif&iacutecil leerlas. Una <b>Responsive 
+
+Web</b> es visible desde cualquier dispositivo y tu 
+
+Web tiene un escenario m&aacutes amplio</p>
     <br>
     <h2>CopyWriting</h2>
     <h5>Texto con sentido</h5>
-    <img class="fakeimg" src="copy.jpg" alt="CopyWriting old Writer machine" >
+    <img class="fakeimg" src="copy.jpg" 
+
+alt="CopyWriting old Writer machine" >
     <p><b>Texto directo a tus sentidos</b></p>
-    <p>Describir un producto extensamente es una gran tentaci&oacuten. Pero una descripci&oacuten que provoque una imagen atractiva en la persona que lee es otra cosa. All&iacute es donde hace su entrada el <b>CopyWriting</b>. Donde lo que escribes se ilumina y provoca la atenci&oacuten.</p>
+    <p>Describir un producto extensamente es una 
+
+gran tentaci&oacuten. Pero una descripci&oacuten que 
+
+provoque una imagen atractiva en la persona que lee 
+
+es otra cosa. All&iacute es donde hace su entrada el 
+
+<b>CopyWriting</b>. Donde lo que escribes se ilumina 
+
+y provoca la atenci&oacuten.</p>
   </main>
 </section>
 
 <!-- Footer -->
 <footer class="footer" id="contacto">
   <h2>Powered by Jose Silva</h2>
-<a href="mailto:jlsilvag@gmail.com"><img alt="Enviar E-Mail" style="width:35px;heigth:auto"src="email.png"</a>
+<a href="mailto:jlsilvag@gmail.com"><img alt="Enviar 
 
- <a href="https://wa.me/59174052037/?text=Hola%20quiero%20info" alt="enviar Whatsapp" target="_blank"><img alt="Enviar Whatsapp" style="width:35px;heigth:auto"src="WhatsApp_Logo_1.gif"</a>
-<a href="https://www.facebook.com/jlsilvag" target="_blank"><img style="width:35px;heigth:auto"src="facebook.png"></a>
+E-Mail" 
+
+style="width:35px;heigth:auto"src="email.png"</a>
+
+ <a href="https://wa.me/59174052037/?text=Hola
+
+%20quiero%20info" alt="enviar Whatsapp" 
+
+target="_blank"><img alt="Enviar Whatsapp" 
+
+style="width:35px;heigth:auto"src="whatsapp.jpg"</a>
+<a href="https://www.facebook.com/jlsilvag" 
+
+target="_blank"><img 
+
+style="width:35px;heigth:auto"src="facebook.jpg"></a
+
+>
 </footer>
 
 
